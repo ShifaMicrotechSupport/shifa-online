@@ -1,0 +1,18 @@
+
+#blockCard{
+	background-color: #E9E9E9;
+}
+
+blockquote{
+	color:#000;
+}
+
+.margin-left-20{
+	margin-left: 20px;
+	margin-right: 20px;
+}	
+@media only screen and (max-device-width: 480px) {
+    li {
+      float:left;
+    }
+  }

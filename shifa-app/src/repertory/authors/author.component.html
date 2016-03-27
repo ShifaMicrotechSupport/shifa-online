@@ -1,0 +1,23 @@
+
+<sd-navbar></sd-navbar>
+
+ <div class="row margin-20">
+  <div *ngFor="#item of authors" class="col-xs-6 col-md-3">
+    <a [routerLink]="[item.link]" class="thumbnail">
+      <div class="caption">
+             <p class="text-center">{{item.name}}</p>
+      </div>
+      <img src="{{item.src}}" alt="{{item.name}}" />
+       
+    </a>
+  </div>
+  
+</div>
+
+
+
+<!--ol class="breadcrumb">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Library</a></li>
+  <li class="active">Data</li>
+</ol!-->

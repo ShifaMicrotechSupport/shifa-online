@@ -1,0 +1,40 @@
+<div class="row margin-20" >
+  
+  <div class="col col-lg-2 col-md-2">
+    <ul class="nav nav-pills nav-stacked">
+      <li>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+
+        </div>
+      </li>
+      <li class="separator float-left " [class.active]="item.rem == 'A'" *ngFor ="#item of abbrList"  >
+        <a [routerLink]="['Medica-Materia']">
+          <span>{{item.rem}}</span>
+        </a>
+      </li>
+    </ul>
+
+  </div>
+  <div class="col col-lg-10 col-md-10">
+
+<table class="table table-striped  ">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Letter</th>
+      <th>REMEDIES</th>
+      <th>ABBREVIATION</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="#item of abbreviationData;#i = index" >
+      <td>{{i+1}}</td>
+      <td class="capital">{{item.rem.substring(0,1)}}</td>
+      <td>{{item.rem}}</td>
+      <td class="capital">{{item.title}}</td>
+    </tr>
+  </tbody>
+</table> 
+</div>
+</div>

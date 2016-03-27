@@ -1,0 +1,31 @@
+<div class="row margin-20" >
+  
+  <div class="col col-lg-2 col-md-2">
+    <ul class="nav nav-pills nav-stacked">
+      <li>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+
+        </div>
+      </li>
+      <li class="separator float-left " [class.active]="item == '1-19'" *ngFor ="#item of organonIndex"  >
+        <a [routerLink]="['Medica-Materia']">
+          <span>{{item}}</span>
+        </a>
+      </li>
+    </ul>
+
+  </div>
+  <div class="col col-lg-10 col-md-10">
+
+          <h2 id="nav-tabs">[1-19] - Organon</h2>
+  <div  id="blockCard">
+        <div class="bs-component">
+              <blockquote>
+                <div [innerHTML]="organonData[0].description"></div>
+              </blockquote>
+            </div>
+          </div>
+
+</div>
+</div>

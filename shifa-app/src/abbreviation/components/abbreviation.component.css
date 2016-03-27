@@ -1,0 +1,16 @@
+.separator {
+   border-bottom:1px solid #4E5D6C;
+}
+.margin-20{
+	margin: 20px;
+}
+.capital{
+	text-transform: capitalize;
+}
+
+
+@media only screen and (min-width: 20.063em) and (max-width: 64em) {   
+  .float-left{
+    float: left;
+  }
+}

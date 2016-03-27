@@ -1,0 +1,56 @@
+<header-medica></header-medica>
+<div class="row  margin-left-20">
+	<div class="col col-lg-2 col-md-2">
+		<materia-remedies></materia-remedies>
+	</div>
+	<div class="col col-lg-10 col-md-10">
+      <h2 id="nav-tabs"> {{medicaData.rem}} - Materia Medica</h2>
+            <div class="bs-component">
+              <ul class="nav nav-tabs">
+                <li *ngIf="medicaData.data" class="active"><a href="#home" data-toggle="tab">Boericke</a></li>
+                <li *ngIf="medicaData.kent"><a href="#profile" data-toggle="tab">Kent</a></li>
+                <li *ngIf="medicaData.allen"><a href="#profile" data-toggle="tab">Allen</a></li>
+              
+              </ul>
+              <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade active in" id="home">
+                 
+                 <div class="col-lg-12" id="blockCard">
+            <div class="bs-component">
+              <blockquote>
+                <div [innerHTML]="medicaData.data"></div>
+              </blockquote>
+            </div>
+          </div>
+
+                </div>
+                <div class="tab-pane fade" id="profile">
+                  
+                  <div class="col-lg-12" id="blockCard">
+            <div class="bs-component">
+              <blockquote>
+                <div [innerHTML]="medicaData.kent"></div>
+              </blockquote>
+            </div>
+          </div>
+
+
+                </div>
+                <div class="tab-pane fade" id="dropdown1">
+                 
+
+
+                  <div class="col-lg-12" id="blockCard">
+            <div class="bs-component">
+              <blockquote>
+                <div [innerHTML]="medicaData.allen"></div>
+              </blockquote>
+            </div>
+          </div>
+
+
+                </div>
+               
+              </div>
+            </div>
+          </div>

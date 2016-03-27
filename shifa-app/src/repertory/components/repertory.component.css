@@ -1,0 +1,40 @@
+
+ul li, a {
+    margin-bottom: 2px;
+
+}
+
+ul li:hover {
+    background-color: #485563;
+    cursor: pointer;
+
+}
+ul li:active {
+    background-color: #B15315;
+    cursor: pointer;
+
+}
+
+.thumbnail{
+    background-color: #485563;
+    border: none;
+}
+ img.smallimg{
+     height: 40px;
+ }
+ .separator{
+     border-bottom:1px solid #4E5D6C;
+ }
+ .blockCard{
+     min-height: 100px;
+ }
+ .remedy {
+     float:left;
+     margin-right: 2px;
+     font-size: 14px;
+ }
+ .less{
+     height: 25px;
+     
+     overflow: scroll;
+ }

@@ -1,0 +1,19 @@
+
+
+ <div class="row margin-20">
+  <div *ngFor="#item of repertoryList" class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+    <a [routerLink]="['TMP-Repertory']" class="thumbnail">
+      <div class="caption">
+             <p class="text-center">{{item}}</p>
+      </div>
+      <img class="chapter" src="assets/images/repertoryicons/_{{item}}.png" 
+            onerror="this.onerror=null;this.src='assets/images/logo.png';"
+       alt="{{item}}" />
+       
+    </a>
+  </div>
+  
+</div>
+
+
+ 

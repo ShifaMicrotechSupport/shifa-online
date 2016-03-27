@@ -1,0 +1,40 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+    
+       
+       <a class="navbar-brand" data-toggle="collapse" href="#" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" ><img src="assets/images/logo.png" class="logo"/> Shifa</a>
+
+       <div class="pull-right visible-xs ">
+          <a class="btn btn-default"><i  class="fa fa-commenting-o"> </i></a>
+          <a class="btn btn-default" [routerLink]="['Home']" ><i  class="fa fa-home"> </i></a>
+          <a class="dropdown-toggle" data-toggle="dropdown" class="btn  btn-default"><i  class="fa fa-user"> </i> Nasir</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Facebook Page</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Log Out</a></li>
+          </ul>
+        </div>
+
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+            <li><a class="active" [routerLink]="['Home']">Home</a></li>
+            <li><a  [routerLink]="['Repertory']">Repertory</a></li>
+            <li><a   [routerLink]="['Medica-Materia']">Materia Medica</a></li>
+            <li><a   [routerLink]="['Abbreviation']">Abbreviation</a></li>
+            <li><a   [routerLink]="['Organon']">Organon</a></li>
+            <li><a   [routerLink]="['Community']">Homeopath Community</a></li>
+            <li><a   [routerLink]="['Chat']">Chat</a></li>
+            <li><a   [routerLink]="['Account']">My Account</a></li>
+            <li><a   [routerLink]="['Settings']">Settings</a></li>
+          
+      </ul>
+      
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>

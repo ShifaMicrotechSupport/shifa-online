@@ -1,0 +1,33 @@
+
+<repertory-header></repertory-header>
+<ul class="list-group">
+  <li class="separator col-md-6 col-lg-4" *ngFor ="#item of repertoryList.repertoryData"  >
+      <img class="smallimg" 
+            src="assets/images/repertoryicons/_{{item.maincategoy}}.png" 
+            onerror="this.onerror=null;this.src='assets/images/logo.png';"
+            alt="{{item.maincategoy}}" />
+      <span class="pull-right">
+         <span class="badge"> {{item.intensity}}</span>
+        <a (click)="item.check = !item.check" class="btn btn-sm btn-primary ">
+            <i  [class.fa-check]="item.check" [class.fa-square-o]="!item.check" class="fa  "> </i></a>
+                <span class="fa fa-chevron-right"></span>
+      </span>
+      <span>{{item.name}}</span>
+      <div class="col-lg-12" id="blockCard">
+            <div class="bs-component">
+              <blockquote>
+                <p>{{item.categoy.split('|').join(', ')}}</p>
+                    <div [class.less]="!item.showMore">
+                        <p   *ngFor="#remedy of item.remedies.split(':')" class="{{remediesColor(remedy)}} remedy">{{remedy}}</p>
+                    </div> 
+                    <cite [hidden]="item.showMore" title="More"><a class="btn btn-sm" (click)="item.showMore = !item.showMore">More</a></cite>
+                    <cite [hidden]="!item.showMore" title="Less"><a class="btn btn-sm" (click)="item.showMore = !item.showMore">Less</a></cite>
+                
+    
+              </blockquote>
+            </div>
+          </div>
+    </li>
+</ul>
+
+
